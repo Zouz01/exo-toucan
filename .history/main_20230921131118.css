@@ -1,0 +1,166 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Utilisation de Flexbox pour centrer .container */
+    justify-content: center; /* Centre .container horizontalement */
+    align-items: center; /* Centre .container verticalement */
+    min-height: 100vh; /* Assure que .container prend au moins 100% de la hauteur de la vue */
+    background: url('background.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.container {
+    width: 428px;
+    height: 626px;
+   position: fixed;
+    text-align: center;
+
+    background: radial-gradient(100% 100% at 0% 0%, #FFBA33 0%, #5e5757 100%);
+   /* background: radial-gradient(100% 100% at 0% 0%, #A6A6A6 0.46%, #000000 78.06%);
+    background: linear-gradient(167.94deg, #7AA77E 0%, #476F72 100%);*/
+
+    opacity: 1.8;
+    box-shadow: inset 10px -10px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+    overflow-y: auto; 
+}
+
+/* position ecriture label*/
+label {
+  
+   
+    font-size: 40px;
+    color: rgb(167, 204, 204);
+   left: 120px;
+   
+    
+   
+
+   
+}
+/*position img*/
+#img {
+    position: relative;
+   border-radius: 20px;
+   width: 20%;
+   top: 800px;
+}
+
+/*position retour d'information produit*/
+#product-info {
+    padding: 20px;
+    color: rgb(171, 221, 205);
+    font-size: larger;
+    text-align: center; /* Centre le texte horizontalement */
+    
+}
+h2 {
+    font-size: xx-large;
+    color: #7af3b1;
+}
+p{
+    font-size: larger ;
+}
+
+/* Champ de saisie pour entrer le code EAN */
+#code_ean {
+    border-radius: 20px;
+    width: 382px;
+    max-height: 100px; /* Définit la hauteur maximale */
+    overflow-y: auto; /* Ajoute une barre de défilement verticale en cas de dépassement du contenu */
+    right: 24px;
+    top: 80px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 30px;
+    text-align: center;
+    color: #0f0d0d;
+}
+
+/* Bouton de recherche */
+button[type="submit"] {
+    position: absolute;
+    width: 144px;
+    height: 63px;
+  background-color: #67d699;
+    top: 160px;
+    border-radius: 20px;
+    right: 140px;
+    
+    
+   
+}
+
+
+
+
+/* styles pour les écrans plus grands */
+@media (min-width: 900px) {
+     .container {
+        width: 1860px;
+        height: 900px;
+     }
+        button[type="submit"] {
+            position: absolute;
+    width: 184px;
+    height: 83px;
+  background-color: #67d699;
+    bottom: 50px;
+    border-radius: 20px;
+    right: 870px;
+        }
+        #code_ean {
+            position: absolute;
+           border-radius: 20px;
+            width: 1382px;
+            height: 68px;
+           right:15% ;
+            top: 80px;
+            font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 25px;
+        line-height: 30px;
+        text-align: center;
+        color: #0f0d0d; 
+
+ }
+ label {
+  
+    top: 20px;
+    font-size: 40px;
+    color: rgb(167, 204, 204);
+   left: 800px;
+    position :fixed;
+
+}
+#product-info {
+    position: absolute;
+    padding: 50px;
+    color:rgb(171, 221, 205);
+    top: 200px;
+    left: 30%;
+    
+ }
+ #img {
+    position: relative;
+   border-radius: 20px;
+   max-width: 20%;
+   max-height: 10%;
+   top: 230px;
+   right: 30%;
+}
+h2 {
+    font-size: 50px;
+    color: aqua;
+}
+p{
+    font-size: 30px ;
+}
+}
+
+
+

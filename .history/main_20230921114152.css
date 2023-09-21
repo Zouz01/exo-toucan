@@ -1,0 +1,101 @@
+body {
+    font-family: Arial, sans-serif;
+   
+   
+    
+   
+    display: flex; /* Utilisation de Flexbox pour centrer le contenu */
+   
+    
+    
+}
+
+.container {
+    
+   position: fixed;
+    
+
+    background: radial-gradient(100% 100% at 0% 0%, #FFBA33 0%, #5e5757 100%);
+   /* background: radial-gradient(100% 100% at 0% 0%, #A6A6A6 0.46%, #000000 78.06%);
+    background: linear-gradient(167.94deg, #7AA77E 0%, #476F72 100%);*/
+
+    opacity: 1.8;
+    box-shadow: inset 10px -10px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+}
+
+/* position ecriture label*/
+label {
+  
+    top: 20px;
+    font-size: 40px;
+    color: rgb(167, 204, 204);
+   left: 120px;
+    position :fixed;
+   
+
+   
+}
+/*position img*/
+#img {
+    position: relative;
+   border-radius: 20px;
+   
+}
+
+/*position retour d'information produit*/
+ #product-info {
+    position: absolute;
+    padding: 20px;
+    color:rgb(171, 221, 205);
+    top: 100px;
+    
+ }
+h2 {
+    font-size: xx-large;
+    color: #7af3b1;
+}
+p{
+    font-size: larger ;
+}
+
+/* Champ de saisie pour entrer le code EAN */
+#code_ean {
+    position: absolute;
+   border-radius: 20px;
+    width: 382px;
+    height: 38px;
+   right:24px ;
+    top: 80px;
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 25px;
+line-height: 30px;
+text-align: center;
+
+color: #0f0d0d;
+
+  
+    
+}
+
+/* Bouton de recherche */
+button[type="submit"] {
+  
+    
+  background-color: #67d699;
+
+    
+    
+    
+   
+}
+
+
+
+
+/* styles pour les écrans plus grands */
+
+
+

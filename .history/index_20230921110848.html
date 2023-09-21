@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TOUCAN API</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+    <div class="container">
+        <form id="product-form" action="https://fr.openfoodfacts.org/api/v0/product/<<code_EAN_13>>" method="POST">
+            <label for="code_ean">Code EAN </label>
+            <input type="text" id="code_ean" name="code_ean" placeholder="Entrez le code EAN ici"><!--pour écrire dans la case blanche-->
+            <button type="submit" id="submit">Rechercher</button>
+        </form>
+        <div><img id="img"></div>
+        <div id="product-info"></div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

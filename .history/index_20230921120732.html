@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TOUCAN API</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Formulaire de recherche -->
+        <form id="product-form" action="https://fr.openfoodfacts.org/api/v0/product/<<code_EAN_13>>" method="POST">
+            <div class="label-container">
+    <label for="code_ean">Code EAN </label>
+</div>
+            <input type="text" id="code_ean" name="code_ean" placeholder="Entrez le code EAN ici"><!-- Champ de saisie du code EAN -->
+            <button type="submit" id="submit">Rechercher</button> <!-- Bouton de soumission du formulaire -->
+        </form>
+
+        <!-- Conteneur pour l'affichage de l'image et des informations -->
+        <div><img id="img"></div>
+        <div id="product-info"></div>
+    </div>
+    
+    <!-- Inclusion du script JavaScript -->
+    <script src="main.js"></script>
+   <scrip // Récupérez une référence vers le conteneur de résultat
+    var resultContainer = document.getElementById('result-container');
+    
+    // Récupérez la hauteur du contenu de #product-info
+    var contentHeight = document.getElementById('product-info').offsetHeight;
+    
+    // Définissez la hauteur de #result-container en fonction de la hauteur du contenu
+    resultContainer.style.height = contentHeight + 'px';</script>
+    
+</body>
+</html>
